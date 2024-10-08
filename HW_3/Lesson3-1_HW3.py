@@ -13,7 +13,7 @@ match math_operation:
     case "-":
         print(f"{number_1}{"-"}{number_2}{"="}{number_1 - number_2}")
     case "*":
-        print(f"{number_1}{"*"}{number_2}{"="}{number_1 * +number_2}")
+        print(f"{number_1}{"*"}{number_2}{"="}{number_1 * number_2}")
     case "/":
         if number_2 != 0:
             print(f"{number_1}{"/"}{number_2}{"="}{number_1 / number_2}")
