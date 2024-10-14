@@ -3,7 +3,7 @@
 # Підказка: Використовуйте модуль string , у якому є string.ascii_letters, з усім набором потрібних букв
 # ascii_lowercase = 'abcdefghijklmnopqrstuvwxyz'
 # ascii_uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-
+#
 import string
 str_symb = string.ascii_lowercase + string.ascii_uppercase           # string.ascii_letters
 print(str_symb)

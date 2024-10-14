@@ -6,7 +6,6 @@
 user_str0 = input("Введить число для обробки : ")
 # print(user_str)
 ii_num = int(user_str0)
-
 if ii_num <= 9:
     print("Ви ввели число <= 9 !")
 
