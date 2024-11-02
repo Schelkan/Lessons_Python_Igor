@@ -39,7 +39,7 @@ popular_words(my_text0, my_words0)
 
 # **************************
 
-# # v2. якщо працюємо з рядком
+# v2. якщо працюємо з рядком
 # def popular_words(text, words):
 #     my_text1 = text.lower()                   # строку переводимо в ніжній регістр
 #     print(my_text1)
@@ -50,14 +50,14 @@ popular_words(my_text0, my_words0)
 #     for ii in range(len_words):  # цикл по кількості слів в нашому списку
 #
 #         num_count = my_text1.count(words[ii])  # кількість входжень слова в списку (строкі)
-#
-#         # якщо працюємо з рядком потрібна перевірка на повне співпадіння входження (слова):
-#         # - рахуємо довжину 'words[ii]'
-#         # - знаходим індех входження 'words[ii]' в строки 'my_text1'
-#         # - починая з індекса, в строки 'my_text1' рахуємо довжину слова до пробелу
-#         # - порівнюємо довжину 'words[ii]' з довжиною слова в 'my_text1'
-#         # - якщо довжини ==, то додаємо в словник з 'num_count', інакше додаємо з 'num_count=0'
-#
+#         """
+#         якщо працюємо з рядком потрібна перевірка на повне співпадіння входження (слова):
+#         - рахуємо довжину 'words[ii]'
+#         - знаходим індех входження 'words[ii]' в строки 'my_text1'
+#         - починая з індекса, в строки 'my_text1' рахуємо довжину слова до пробелу
+#         - порівнюємо довжину 'words[ii]' з довжиною слова в 'my_text1'
+#         - якщо довжини ==, то додаємо в словник з 'num_count', інакше додаємо з 'num_count=0'
+#         """
 #         ind_word = (my_text1.find(words[ii]))  # Повертає найменший індекс, за яким виявляється початок зазначеної підрядки
 #         ind_space = my_text1.find(' ', ind_word + 1)    # Пошук індексу найблищого пробелу справа
 #         if ind_space-ind_word == len(words[ii]):    # перевірка довжина входження == довжинні слова в рядку
@@ -68,7 +68,7 @@ popular_words(my_text0, my_words0)
 #     return dict_words
 #
 # popular_words(my_text0, my_words0)
-#
+
 # assert popular_words('When I was One I had just begun When I was Two I was nearly new ', ['i', 'was', 'three', 'near']) == {'i': 4, 'was': 3, 'three': 0, 'near': 0}, 'Test1'
 # print('OK')
 
